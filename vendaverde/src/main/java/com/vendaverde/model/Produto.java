@@ -34,6 +34,8 @@ public class Produto {
 	@NotNull
 	private boolean estoque;
 	
+	private String doacao;
+	
 	@NotNull
 	@ManyToOne
 	@JsonIgnoreProperties("produto")
@@ -85,6 +87,14 @@ public class Produto {
 
 	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
+	}
+
+	public String getDoacao() {
+		return doacao;
+	}
+
+	public void setDoacao(String doacao) {
+		this.doacao = doacao;
 	}
 	
 	
